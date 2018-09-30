@@ -49,7 +49,7 @@ half4 CalculateLight (unity_v2f_deferred i)
 	if (atten < 0.25) atten = 0;
 	else if (atten < 0.5) atten = 0.25;
 	else if (atten < 0.75) atten = 0.5;
-	else if (atten < 0.75) atten = 0.75;
+	else if (atten < 0.1) atten = 0.75;
 	else atten = 1;
 
 	//atten = smoothstep(0.9, 1, atten);
