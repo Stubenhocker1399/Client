@@ -4573,6 +4573,11 @@ Prefab:
       propertyPath: m_LocalEulerAnglesHint.y
       value: -138.914
       objectReference: {fileID: 0}
+    - target: {fileID: 114218001589825030, guid: 8dff190a136b0634c85caf840cfc4509,
+        type: 2}
+      propertyPath: deragdollTime
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8dff190a136b0634c85caf840cfc4509, type: 2}
   m_IsPrefabAsset: 0
