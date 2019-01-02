@@ -3617,6 +3617,11 @@ Prefab:
       propertyPath: m_Name
       value: LightTube (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 20020968019664382, guid: 392b10bf8513634449db61435d87c644,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 392b10bf8513634449db61435d87c644, type: 2}
   m_IsPrefabAsset: 0
@@ -6658,6 +6663,11 @@ Prefab:
     - target: {fileID: 4933857911115878, guid: 392b10bf8513634449db61435d87c644, type: 2}
       propertyPath: m_LocalScale.z
       value: 0.99999976
+      objectReference: {fileID: 0}
+    - target: {fileID: 20020968019664382, guid: 392b10bf8513634449db61435d87c644,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 392b10bf8513634449db61435d87c644, type: 2}
@@ -13427,6 +13437,11 @@ Prefab:
       propertyPath: m_LocalScale.z
       value: 0.99999976
       objectReference: {fileID: 0}
+    - target: {fileID: 20020968019664382, guid: 392b10bf8513634449db61435d87c644,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 392b10bf8513634449db61435d87c644, type: 2}
   m_IsPrefabAsset: 0
@@ -13697,6 +13712,11 @@ Prefab:
     - target: {fileID: 1399488345028922, guid: 392b10bf8513634449db61435d87c644, type: 2}
       propertyPath: m_Name
       value: LightTube (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 20020968019664382, guid: 392b10bf8513634449db61435d87c644,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 392b10bf8513634449db61435d87c644, type: 2}
@@ -20552,6 +20572,11 @@ Prefab:
       propertyPath: m_LocalScale.z
       value: 0.99999976
       objectReference: {fileID: 0}
+    - target: {fileID: 20020968019664382, guid: 392b10bf8513634449db61435d87c644,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 392b10bf8513634449db61435d87c644, type: 2}
   m_IsPrefabAsset: 0
@@ -22056,6 +22081,11 @@ Prefab:
       propertyPath: m_Name
       value: LightTube (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 20020968019664382, guid: 392b10bf8513634449db61435d87c644,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 392b10bf8513634449db61435d87c644, type: 2}
   m_IsPrefabAsset: 0
@@ -22345,6 +22375,11 @@ Prefab:
     - target: {fileID: 4933857911115878, guid: 392b10bf8513634449db61435d87c644, type: 2}
       propertyPath: m_RootOrder
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 20020968019664382, guid: 392b10bf8513634449db61435d87c644,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 392b10bf8513634449db61435d87c644, type: 2}
@@ -26376,6 +26411,11 @@ Prefab:
       propertyPath: m_Name
       value: LightTube (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 20020968019664382, guid: 392b10bf8513634449db61435d87c644,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 392b10bf8513634449db61435d87c644, type: 2}
   m_IsPrefabAsset: 0
@@ -26701,6 +26741,11 @@ Prefab:
     - target: {fileID: 4933857911115878, guid: 392b10bf8513634449db61435d87c644, type: 2}
       propertyPath: m_LocalScale.z
       value: 0.99999976
+      objectReference: {fileID: 0}
+    - target: {fileID: 20020968019664382, guid: 392b10bf8513634449db61435d87c644,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 392b10bf8513634449db61435d87c644, type: 2}
@@ -28441,6 +28486,11 @@ Prefab:
     - target: {fileID: 1399488345028922, guid: 392b10bf8513634449db61435d87c644, type: 2}
       propertyPath: m_Name
       value: LightTube (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 20020968019664382, guid: 392b10bf8513634449db61435d87c644,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 392b10bf8513634449db61435d87c644, type: 2}
