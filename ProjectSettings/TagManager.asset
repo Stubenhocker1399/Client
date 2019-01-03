@@ -13,11 +13,11 @@ TagManager:
   - UI
   - 
   - 
+  - Walls
   - PostProcessing
   - Character
   - Item
   - IgnoreInteractorRaycast
-  - 
   - 
   - 
   - 
