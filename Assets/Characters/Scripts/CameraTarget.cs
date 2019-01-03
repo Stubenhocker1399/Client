@@ -7,8 +7,47 @@ public class CameraTarget : MonoBehaviour
     [SerializeField] private float distance = 5;
     [SerializeField] private float viewAngle = 45;
 
+
     private void Update()
     {
+        if (Input.GetKeyDown(KeyCode.E))
+        {
+
+            positionAngle.x += 90;
+
+        }
+
+        if (Input.GetKeyDown(KeyCode.Q))
+        {
+
+            positionAngle.x -= 90;
+
+        }
+
+        if(Input.GetKeyDown(KeyCode.Equals))
+        {
+
+            distance = distance + 2;
+
+        }
+
+        if (Input.GetKeyDown(KeyCode.Minus))
+        {
+            distance = distance - 2;
+        }
+
+        if (distance < 6)
+        {
+            distance = distance + 1;
+        }
+
+        if (distance > 15)
+        {
+            distance = distance - 1;
+        }
+
+
+
         if (target == null)
         {
             return;

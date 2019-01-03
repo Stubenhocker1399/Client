@@ -3,9 +3,17 @@ using System.Collections.Generic;
 using UnityEngine;
 using System;
 using System.Linq;
+using UnityEngine.UI;
 
 [RequireComponent(typeof(CharacterIK))]
 public class CharacterInventory : MonoBehaviour {
+
+    public Sprite LeftDefault;
+    public Sprite LeftMain;
+    public Sprite RightDefault;
+    public Sprite RightMain;
+    public GameObject LeftHand;
+    public GameObject RightHand;
 
     private CharacterIK characterIK;
 
@@ -32,12 +40,59 @@ public class CharacterInventory : MonoBehaviour {
         }
     }
 
-    private void UpdateHands() {
-        if (Input.GetKeyDown(KeyCode.X)) {
+    public void SetHighlightedLeft()
+    {
+
+        if (RightHand.GetComponent<Image>().sprite = RightMain)
+        {
+
+            RightHand.GetComponent<Image>().sprite = RightDefault;
+
+        }
+
+
+        RightHand.GetComponent<Image>().sprite = RightDefault;
+        LeftHand.GetComponent<Image>().sprite = LeftMain;
+
+    }
+
+    public void SetHighlightedRight()
+    {
+
+        if (LeftHand.GetComponent<Image>().sprite = LeftMain)
+        {
+
+            LeftHand.GetComponent<Image>().sprite = LeftDefault;
+
+        }
+
+        LeftHand.GetComponent<Image>().sprite = LeftDefault;
+        RightHand.GetComponent<Image>().sprite = RightMain;
+
+    }
+
+
+        private void UpdateHands() {
+
+        if (RightHand.GetComponent<Image>().sprite == RightMain)
+        {
+
             // Cycle hand
             activeHand = (activeHand + 1) % numHands;
+
         }
-        if (Input.GetKeyDown(KeyCode.Q)) {
+
+        if (LeftHand.GetComponent<Image>().sprite == LeftMain)
+        {
+
+            // Cycle hand
+            activeHand = (activeHand - 1) % numHands;
+
+        }
+
+
+
+        if (Input.GetKeyDown(KeyCode.F)) {
             Containable inhand = GetInhand();
             if (inhand) {
                 GetActiveHand().Remove(inhand);
