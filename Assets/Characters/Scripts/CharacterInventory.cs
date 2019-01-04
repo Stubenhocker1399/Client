@@ -85,6 +85,14 @@ public class CharacterInventory : MonoBehaviour {
 
         }
 
+        if (Input.GetKeyDown(KeyCode.X))
+        {
+            Container temp = hands[0];
+            hands[0] = hands[1];
+            hands[1] = temp;
+            Debug.Log("Items Swapped");
+        }
+
         if (LeftHand.GetComponent<Image>().sprite == LeftMain)
         {
 
@@ -119,19 +127,6 @@ public class CharacterInventory : MonoBehaviour {
         if (contained.Count == 0)
             return null;
         return contained[0];
-    }
-
-    void Swapitem()
-    {
-        if(Input.GetKeyDown(KeyCode.X))
-        {
-            Container temp = hands[0];
-            hands[0] = hands[1];
-            hands[1] = temp;
-            Debug.Log("Items Swapped");
-        } 
-
-       
     }
 
     private void OnAddedToHand(Containable containable) {
