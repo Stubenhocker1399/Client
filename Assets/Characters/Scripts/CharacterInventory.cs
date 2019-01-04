@@ -118,8 +118,8 @@ public class CharacterInventory : MonoBehaviour {
     private void OnAddedToHand(Containable containable) {
         int handIndex = Array.FindIndex(hands, hand => (hand == containable.Container));
         containable.transform.parent = characterIK.GetItemHoldTransform(handIndex);
-        containable.transform.localPosition = Vector3.zero;
-        containable.transform.localRotation = Quaternion.identity;
+        containable.transform.localPosition = (containable as Containable).PickPosition;
+        containable.transform.localEulerAngles = (containable as Containable).PickRotation;
         Rigidbody containableRB = containable.GetComponent<Rigidbody>();
         if (containableRB) {
             containableRB.isKinematic = true;
