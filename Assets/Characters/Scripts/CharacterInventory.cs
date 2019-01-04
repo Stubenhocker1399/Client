@@ -8,6 +8,8 @@ using UnityEngine.UI;
 [RequireComponent(typeof(CharacterIK))]
 public class CharacterInventory : MonoBehaviour {
 
+
+
     public Sprite LeftDefault;
     public Sprite LeftMain;
     public Sprite RightDefault;
@@ -20,6 +22,7 @@ public class CharacterInventory : MonoBehaviour {
     [SerializeField] private int numHands = 2;
 
     private Container[] hands;
+    public Container[] Pockets = new Container[2];
     private int activeHand = 0;
 
     private void Awake() {
@@ -78,7 +81,7 @@ public class CharacterInventory : MonoBehaviour {
         {
 
             // Cycle hand
-            activeHand = (activeHand + 1) % numHands;
+            activeHand = 1;
 
         }
 
@@ -86,7 +89,7 @@ public class CharacterInventory : MonoBehaviour {
         {
 
             // Cycle hand
-            activeHand = (activeHand - 1) % numHands;
+            activeHand = 0;
 
         }
 
@@ -102,6 +105,9 @@ public class CharacterInventory : MonoBehaviour {
 
     public Container GetActiveHand() {
         return hands[activeHand];
+
+
+
     }
 
     public Container[] GetHands() {
@@ -113,6 +119,19 @@ public class CharacterInventory : MonoBehaviour {
         if (contained.Count == 0)
             return null;
         return contained[0];
+    }
+
+    void Swapitem()
+    {
+        if(Input.GetKeyDown(KeyCode.X))
+        {
+            Container temp = hands[0];
+            hands[0] = hands[1];
+            hands[1] = temp;
+            Debug.Log("Items Swapped");
+        } 
+
+       
     }
 
     private void OnAddedToHand(Containable containable) {
