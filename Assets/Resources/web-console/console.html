@@ -86,12 +86,12 @@
                     query += i.toString() + "=" + checkboxFilter[i].toString() + "&";
                 }
                 query += "search=" + searchString
-                logSocket = new WebSocket("wss://192.168.1.117:5335/Log" + query);
+                logSocket = new WebSocket("wss://localhost:5335/Log" + query);
                 logSocket.onopen = onLogSocketOpen;
                 logSocket.onclose = onLogSocketClose;
             }
             function createStatusSocket() {
-                statusSocket = new WebSocket("wss://192.168.1.117:5335/Status");
+                statusSocket = new WebSocket("wss://localhost:5335/Status");
                 statusSocket.onopen =  onStatusSocketOpen;
                 statusSocket.onclose = onStatusSocketClose;
             }

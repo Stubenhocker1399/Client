@@ -110,7 +110,7 @@ public class Websocket : MonoBehaviour
     {
         logContainer = new LogContainer(new List<LogMessage>());
         Debug.Log("Starting web socket server.");
-        wssv = new WebSocketServer ("wss://192.168.1.117:5335");
+        wssv = new WebSocketServer ("wss://localhost:5335");
         wssv.AddWebSocketService<Log> ("/Log");
         Application.logMessageReceived += LogCallback;
         Application.SetStackTraceLogType(LogType.Error, StackTraceLogType.Full);
