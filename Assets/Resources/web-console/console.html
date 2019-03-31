@@ -206,7 +206,6 @@
             }
             function onLogMessageHandler(event) {
                 var data = JSON.parse(event.data);
-                //console.log(data);
                 var rows = tablebody.getElementsByTagName("tr").length;
                 if(data.logs != undefined) {
                     // Data is a batch of logs
