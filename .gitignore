@@ -297,6 +297,8 @@ paket-files/
 # JetBrains Rider
 .idea/
 *.sln.iml
+*.DotSettings
+*.user
 
 # CodeRush
 .cr/
@@ -347,3 +349,5 @@ Assets/Plugins/Editor/JetBrains\.meta
 Assets/Plugins/Editor/JetBrains/
 
 .vscode
+AssetBundles/
+Assets/StreamingAssets/
